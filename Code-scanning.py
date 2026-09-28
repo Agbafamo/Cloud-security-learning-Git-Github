@@ -6,8 +6,7 @@ patterns = {
     "Hardcoded secret": r'secret\s*=\s*["\'].*["\']',
     "Use of eval()": r'\beval\s*\(',
     "Use of exec()": r'\bexec\s*\(',
-   "SQL string concatenation": r'(SELECT|INSERT|UPDATE|DELETE).*\+',
-
+    "SQL string concatenation": r'(SELECT|INSERT|UPDATE|DELETE).*\+',
 }
 
 def scan_file(filename):
