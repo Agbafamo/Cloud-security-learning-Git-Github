@@ -5,6 +5,7 @@ patterns = {
     "Hardcoded API key": r'api[_-]?key\s*=\s*["\'].*["\']',
     "Use of eval()": r'\beval\s*\(',
     "Use of exec()": r'\bexec\s*\(',
+    "Use of subprocess": r'\bsubprocess\.',
     "SQL string concatenation": r'(SELECT|INSERT|UPDATE|DELETE).*\+',
 }
 
