@@ -74,22 +74,54 @@ set2 = {"192.168.0.1", "10.10.0.1"}
 # common_ips = set1 - set2
 # print("Common IP addresses:", common_ips)
 
-logs = [
-    {"username": "admin", "ip": "192.168.1.1", "status": "success"},
-    {"username": "user1", "ip": "192.168.0.5", "status": "failure"},
-    {"username": "user2", "ip": "192.168.0.10", "status": "success"},
-    {"username": "alex", "ip": "192.168.101.0", "status": "failure"},
-    {"username": "bob", "ip": "192.168.100.1", "status": "success"},
-    {"username": "charlie", "ip": "192.168.102.1", "status": "success"},
-    {"username": "david", "ip": "192.168.103.1", "status": "failure"}
-]
+# logs = [
+#     {"username": "admin", "ip": "192.168.1.1", "status": "success"},
+#     {"username": "user1", "ip": "192.168.0.5", "status": "failure"},
+#     {"username": "user2", "ip": "192.168.0.10", "status": "success"},
+#     {"username": "alex", "ip": "192.168.101.0", "status": "failure"},
+#     {"username": "bob", "ip": "192.168.100.1", "status": "success"},
+#     {"username": "charlie", "ip": "192.168.102.1", "status": "success"},
+#     {"username": "david", "ip": "192.168.103.1", "status": "failure"}
+# ]
 
-unique_ips = {log["ip"] for log in logs}
-print("Unique IP addresses:", unique_ips)
+# unique_ips = {log["ip"] for log in logs}
+# print("Unique IP addresses:", unique_ips)
 
 
-special_ip = "192.168.0.10"
-if special_ip in unique_ips:
-    print(f"Special IP {special_ip} found in logs.")
-else:
-    print(f"Special IP not found in logs.")
+# special_ip = "192.168.0.0"
+# if special_ip in unique_ips:
+#     print(f"Special IP {special_ip} found in logs.")
+# else:
+#     print(f"Special IP not found in logs.")
+
+
+# #Number of failed login attempts
+
+# logs = [
+#     {"username": "admin", "ip": "192.168.1.1", "status": "success"},
+#     {"username": "user1", "ip": "192.168.0.5", "status": "failure"},
+#     {"username": "user2", "ip": "192.168.0.10", "status": "success"},
+#     {"username": "alex", "ip": "192.168.101.0", "status": "failure"},
+#     {"username": "bob", "ip": "192.168.100.1", "status": "success"},
+#     {"username": "charlie", "ip": "192.168.102.1", "status": "success"},
+#     {"username": "david", "ip": "192.168.103.1", "status": "failure"},
+#     {"username": "admin", "ip": "192.168.1.1", "status": "success"},
+#     {"username": "user1", "ip": "192.168.0.5", "status": "failure"},
+#     {"username": "alex", "ip": "192.168.101.0", "status": "failure"}
+# ]
+
+
+# failed_attempts ={}
+
+
+# for log in logs:
+#     if log["status"] == "failure":
+#         username =log["username"]
+#         if username not in failed_attempts:
+#             failed_attempts[username] = 0
+#         failed_attempts[username] += 1
+# print("Failed login attempts per user:" , failed_attempts)
+
+
+****Basic Authentication System****
+
